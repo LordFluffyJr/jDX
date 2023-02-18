@@ -51,6 +51,5 @@ Test & Optimize
 
 # Add second Python installation (Suggested)
 > sudo make altinstall  
-> sudo make install  
-`Overwrites current install`  
+> sudo make install  `Overwrites current install`  
 > python3 --version    

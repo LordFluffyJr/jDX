@@ -27,6 +27,6 @@ Run package installation
 > sudo ./xampp-linux-x64-7.3.5.1-installer.run
 
 # Uninstalling XAMPP
-> cd /opt/lampp
-> sudo ./uninstall
-> sudo rm –r /opt/lamp
+> cd /opt/lampp  
+> sudo ./uninstall  
+> sudo rm –r /opt/lamp  

@@ -21,4 +21,12 @@ Make installer executable
 Verify installer permissions 
 > ls –l xampp-linux-x64-7.3.5.1-installer.run
 
-`// Expected output: "rwxr –xr –x 1 xampp-linux-x64-7.3.5.1-installer.run"`
+`Expected output: "rwxr –xr –x 1 xampp-linux-x64-7.3.5.1-installer.run"`
+
+Run package installation
+> sudo ./xampp-linux-x64-7.3.5.1-installer.run
+
+# Uninstalling XAMPP
+> cd /opt/lampp
+> sudo ./uninstall
+> sudo rm –r /opt/lamp

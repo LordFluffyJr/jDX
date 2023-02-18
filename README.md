@@ -27,6 +27,7 @@ Run package installation
 > sudo ./xampp-linux-x64-7.3.5.1-installer.run
 
 # Uninstalling XAMPP
+Once the system is no longer needed, the final step after removing system files is to uninstall the server and its directory.
 > cd /opt/lampp  
 > sudo ./uninstall  
 > sudo rm –r /opt/lamp  

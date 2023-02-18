@@ -50,7 +50,7 @@ Test & Optimize
 > ./configure --enable-optimizations
 
 # Add second Python installation (Suggested)
-> sudo make altinstall
-> sudo make install
-`Overwrites current install`
-> python3 --version  
+> sudo make altinstall  
+> sudo make install  
+`Overwrites current install`  
+> python3 --version    

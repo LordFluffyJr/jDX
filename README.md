@@ -5,7 +5,6 @@ XAMPP:
 https://sourceforge.net/projects/xampp/files/latest/download
 
 # Install & upgrade 'gdown' to download XAMPP installer
-`
-> pip install gdown
-> pip install --upgrade gdown 
-`
+
+> pip install gdown  
+> pip install --upgrade gdown

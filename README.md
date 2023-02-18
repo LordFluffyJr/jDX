@@ -16,3 +16,5 @@ Download XAMPP installer from Google Drive via 'gdown'
 # Install XAMPP
 Make installer executable
 > sudo chmod 755 xampp-linux-x64-8.2.0-0-installer.run  
+Verify installer permissions 
+

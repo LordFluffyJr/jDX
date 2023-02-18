@@ -48,8 +48,3 @@ Extract compressed files
 Test & Optimize
 > cd python-3.8.3  
 > ./configure --enable-optimizations
-
-# Add second Python installation (Suggested)
-> sudo make altinstall  
-> sudo make install  `Overwrites current install`  
-> python3 --version    

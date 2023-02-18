@@ -5,17 +5,15 @@ XAMPP:
 https://sourceforge.net/projects/xampp/files/latest/download
 
 # Install & upgrade 'gdown' to download XAMPP installer
-`
 > pip install gdown
-// to upgrade
 > pip install --upgrade gdown 
-`
+
 
 Download installer via 'gdown'
-`
-gdown https://drive.google.com/uc?id=1l_5RK28JRL19wpT22B-DY9We3TVXnnQQ
+
+> gdown https://drive.google.com/uc?id=1l_5RK28JRL19wpT22B-DY9We3TVXnnQQ
 // downloads: xampp-linux-x64-8.2.0-0-installer.run
-`
+
 
 Make installer executable
 `

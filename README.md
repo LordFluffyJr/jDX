@@ -30,3 +30,27 @@ Run package installation
 > cd /opt/lampp  
 > sudo ./uninstall  
 > sudo rm –r /opt/lamp  
+
+# Installing Python
+Update local repositories and install Python
+> sudo apt update
+
+Install support software
+> sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+
+Download latest Python via source code
+> cd /temp  
+> wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz  
+
+Extract compressed files
+> tar -xf Python-3.8.3.tgz  
+
+Test & Optimize
+> cd python-3.8.3  
+> ./configure --enable-optimizations
+
+# Add second Python installation (Suggested)
+> sudo make altinstall
+> sudo make install
+`Overwrites current install`
+> python3 --version  

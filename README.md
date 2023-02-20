@@ -1,5 +1,7 @@
 # jDX
 jDX Distribution Software
+Main updates
+> sudo apt-get update  
 
 # Install gdown
 `gdown` is a library used for downloading large files from Google Drive that `wget` would normally not allow.

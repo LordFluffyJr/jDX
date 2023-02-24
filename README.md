@@ -51,3 +51,5 @@ Extract compressed files
 Test & Optimize
 > cd python-3.8.3  
 > ./configure --enable-optimizations
+
+# Creating Database

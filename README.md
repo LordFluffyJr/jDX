@@ -1,8 +1,8 @@
 # jDX
 jDX Distribution Software
 Main updates
-> sudo apt-get update
-> sudo apt-get install zip unzip
+> sudo apt-get update  
+> sudo apt-get install zip unzip  
 
 # Installing Python
 Update local repositories and install Python
@@ -53,4 +53,31 @@ Once the system is no longer needed, the final step after removing system files 
 > sudo ./uninstall  
 > sudo rm –r /opt/lamp  
 
-# Creating Database
+# Installing SQL
+Import the public repository GPG keys  
+> wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc  
+Register the SQL Server Ubuntu repository  
+> sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/20.04/mssql-server-2022.list)"  
+Install SQL server  
+> sudo apt-get update  
+> sudo apt-get install -y mssql-server  
+> sudo /opt/mssql/bin/mssql-conf setup  
+Verify
+> systemctl status mssql-server --no-pager
+
+# Install SQL command-line tools  
+> sudo apt-get update  
+> sudo apt install curl  
+Import the public repository GPG keys  
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc  
+Register Ubuntu repository.
+> curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
+Update the sources list and run the installation command with the unixODBC developer package.  
+> sudo apt-get update  
+> sudo apt-get install mssql-tools unixodbc-dev  
+Update mssql-tools
+> sudo apt-get update
+> sudo apt-get install mssql-tools  
+
+# Connect locally  
+sqlcmd -S localhost -U <username> -P '<YourPassword>'

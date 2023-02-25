@@ -3,6 +3,24 @@ jDX Distribution Software
 Main updates
 > sudo apt-get update  
 
+# Installing Python
+Update local repositories and install Python
+> sudo apt update
+
+Install support software
+> sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+
+Download latest Python via source code
+> cd /temp  
+> wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz  
+
+Extract compressed files
+> tar -xf Python-3.8.3.tgz  
+
+Test & Optimize
+> cd python-3.8.3  
+> ./configure --enable-optimizations
+
 # Install gdown
 `gdown` is a library used for downloading large files from Google Drive that `wget` would normally not allow.
 This library allows for files of up to 500MB to be downloaded from Google Drive via terminal or Python.
@@ -33,23 +51,5 @@ Once the system is no longer needed, the final step after removing system files 
 > cd /opt/lampp  
 > sudo ./uninstall  
 > sudo rm –r /opt/lamp  
-
-# Installing Python
-Update local repositories and install Python
-> sudo apt update
-
-Install support software
-> sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
-
-Download latest Python via source code
-> cd /temp  
-> wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz  
-
-Extract compressed files
-> tar -xf Python-3.8.3.tgz  
-
-Test & Optimize
-> cd python-3.8.3  
-> ./configure --enable-optimizations
 
 # Creating Database

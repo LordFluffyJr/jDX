@@ -1,7 +1,8 @@
 # jDX
 jDX Distribution Software
 Main updates
-> sudo apt-get update  
+> sudo apt-get update
+> sudo apt-get install zip unzip
 
 # Installing Python
 Update local repositories and install Python
